@@ -2,24 +2,24 @@
 #include <Joystick.h>
 
 
-const int R1_1 = 13; // Interrupt
-const int R1_2 = 14;
+#define R1_1  13 // Interrupt
+#define R1_2  14
 
-const int R2_1 = 15; // Interrupt
-const int R2_2 = 16;
+#define R2_1  15 // Interrupt
+#define R2_2  16
 
-const int R3_1 = 17; // Interrupt
-const int R3_2 = 18;
+#define R3_1  17 // Interrupt
+#define R3_2  18
 
-const int R4_1 = 19; // Interrupt
-const int R4_2 = 20;
+#define R4_1  19 // Interrupt
+#define R4_2  20
 
-const int BTNSIZE = 10;
+#define BTNSIZE  10
 const int BTN[10] = {0,1,2,3,4,5,6,7,8,9};
 const int BTNOUT[10] = {21,22,23,24,25,26};
 int btnlast[10] = {0,0,0,0,0,0,0,0,0,0};
 
-const int RSIZE = 4;
+#define RSIZE  4
 volatile int rval[4] = {0,0,0,0};
 //const char charinc[4] = {'A','B','C','D'};
 //const char chardec[4] = {'a','b','c','d'};
