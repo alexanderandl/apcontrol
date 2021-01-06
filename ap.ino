@@ -181,7 +181,7 @@ void green() {
 }
 
 void blue() {
-  digitalWrite(LED_GREEN,HIGH);
+  digitalWrite(LED_GREEN,LOW);
   digitalWrite(LED_BLUE,HIGH);
   mblue = millis();
 }
