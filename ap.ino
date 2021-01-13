@@ -10,7 +10,7 @@
 
 #define LED_WAIT       300 // time in millis, so long is red andf blue on
 #define INPUT_WAIT     20
-#define LOOP_DELAY     20
+#define LOOP_DELAY     50
 
 // pins for the rotary encoders
 #define R1_1  24 // BARO
@@ -189,6 +189,12 @@ void  resetEvent(int i) {
   if (rvalr[i] != 0)  {    
     rvalr[i] = 0;
     Joystick.button(BTNINC[i],0);
+    Joystick.button(BTNDEC[i],0);
+    if (DEBUG>0) {
+      Serial.print("RESET");
+      Serial.println(i);      
+    }
+
   }
 }
 
